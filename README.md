@@ -1,25 +1,25 @@
 # Stock Management System
-Amazing Stock Control & Management System
+Incredible Stock Control & Management System
 
-~Open source inventory management system with php and mysql
+~Open source inventory management system with php and mysql.
 
-~Invoice generation and easy to download invoice in PDF format
+~Invoice generation and easy to download invoice in PDF format.
 
-~Lightweight and easy to use
+~Lightweight and easy to use.
 
-~Order management and product management can be done with ease
+~Order management and product management can be done with ease.
 
-~Report management
+~Report management.
 
 ~User wise sell report.
 
-# Requirement
+# Necessity
 
 ```
-Require to change
+//Require to change
 store_url in db_connect.php
 
-Login Credentials
+//Login Credentials
 Id : admin
 password : AdministratoR
 ```
