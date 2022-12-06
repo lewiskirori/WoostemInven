@@ -11,7 +11,7 @@ Incredible Stock Control & Management System
 
 ~Report management.
 
-~User wise sell report.
+~User wise view report.
 
 # Necessity
 
