@@ -1,4 +1,4 @@
-# Inventory Management System
+# Stock Management System
 Amazing Stock Control & Management System
 
 ~Open source inventory management system with php and mysql
