@@ -55,7 +55,7 @@ if($_POST) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Woostem - Amazing Stock Control & Management System</title>
+	<title>Woostem | Amazing Stock Control Management System</title>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
@@ -91,7 +91,7 @@ if($_POST) {
 				
      		 }
    	 		</style>
-				<a class="nav"href="http://localhost/WoostemInven/"><h1>Woostem Inven</h1></a>
+				<a class="nav"href="http://127.0.0.1/WoostemInven/"><h1>Woostem Inven</h1></a>
 				<style>
 				h1,a{
 					font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -137,13 +137,13 @@ if($_POST) {
 							  <div class="form-group">
 									<label for="username" class="col-sm-2 control-label">Username</label>
 									<div class="col-sm-10">
-									  <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="off" />
+									  <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" autocomplete="off" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="password" class="col-sm-2 control-label">Password</label>
 									<div class="col-sm-10">
-									  <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off" />
+									  <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" />
 									</div>
 								</div>								
 								<div class="form-group">

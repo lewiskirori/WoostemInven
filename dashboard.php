@@ -96,7 +96,7 @@ $connect->close();
 		  </div>
 
 		  <div class="cardContainer">
-		    <p><?php echo date('l') .' '.date('d').', '.date('Y'); ?></p>
+		    <p><?php date_default_timezone_set('Africa/Nairobi'); echo date('l') .' '.date('d').', '.date('Y'); ?></p>
 			<p><?php $now = new DateTime(); echo $now->format(' H:i A'); ?></p>
 		  </div>
 		</div> 

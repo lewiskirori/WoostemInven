@@ -4,7 +4,7 @@ $localhost = "localhost";
 $username = "root";
 $password = "777";
 $dbname = "woostem";
-$store_url = "http://localhost/WoostemInven/";
+$store_url = "http://127.0.0.1/WoostemInven/";
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
 // check connection

@@ -4,7 +4,7 @@
 <html>
 <head>
 
-	<title>Stock Control & Management System - Woostem</title>
+	<title>Stock Control Management System - Woostem</title>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
@@ -34,7 +34,6 @@
 </head>
 <body>
 
-
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,7 +52,7 @@
       </button>
       <!-- <a class="navbar-brand" href="#">Brand</a> -->
 	  <a class="navbar-brand" href="index.php" style="padding:0px;">
-                    <img src="logo.png" alt="">
+                    <img src="woo-inv-log.png" alt="">
                 </a>
     </div>
 
