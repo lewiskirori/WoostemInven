@@ -19,5 +19,5 @@ store_url in db_connect.php
 
 //Login Credentials
 Id : example@admin.dev
-password : AdmiN
+pwd : AdmiN
 ```
