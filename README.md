@@ -20,6 +20,6 @@ Incredible Stock Control & Management System
 store_url in db_connect.php
 
 //Login Credentials
-Id : lewis@admin.dev
-password : AdministratoR
+Id : example@admin.dev
+password : AdmiN
 ```
