@@ -54,8 +54,8 @@ if($_POST) {
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Woostem | Amazing Stock Control Management System</title>
+<head> <!--Woostem | Amazing Stock Control Mgnt-->
+	<title>Log in: Woostem</title>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
@@ -63,6 +63,8 @@ if($_POST) {
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap-theme.min.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="assests/font-awesome/css/font-awesome.min.css">
+	<!--x-icon-->
+	<link rel="icon" type="image/x-icon" href="woo-inv-log.png" />
 
   <!-- custom css -->
   <link rel="stylesheet" href="custom/css/custom.css">	

@@ -2,3 +2,13 @@ devlewis67@gmail.com
 
 woostem
 6G*HSJdqpR@ThA5fhVcp
+
+mysql
+``db name
+id20019055_woostem_db
+``db user
+id20019055_woostem_root
+``pwd
+HtcXKzDi=SZj6eQ_
+``dbhost
+localhost

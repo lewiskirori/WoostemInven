@@ -4,7 +4,7 @@
 <html>
 <head>
 
-	<title>Stock Control Management System - Woostem</title>
+	<title>Stock Control: Woostem</title>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap-theme.min.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="assests/font-awesome/css/font-awesome.min.css">
+  <!--x-icon-->
+  <link rel="icon" type="image/x-icon" href="woo-inv-log.png" />
+
 
   <!-- custom css -->
   <link rel="stylesheet" href="custom/css/custom.css">
@@ -73,10 +76,10 @@
 		<?php } ?>
 		
         <li class="dropdown" id="navOrder">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-dollar"></i> Orders <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-opencart"></i> Orders <span class="caret"></span></a>
           <ul class="dropdown-menu">            
-            <li id="topNavAddOrder"><a href="orders.php?o=add"> <i class="glyphicon glyphicon-plus"></i> Add Orders</a></li>            
-            <li id="topNavManageOrder"><a href="orders.php?o=manord"> <i class="glyphicon glyphicon-edit"></i> Manage Orders</a></li>            
+            <li id="topNavAddOrder"><a href="orders.php?o=add"> <i class="fa fa-spinner fa-spin fa-pulse"></i> Add Order</a></li>            
+            <li id="topNavManageOrder"><a href="orders.php?o=manord"> <i class="fa fa-tasks"></i> Manage Order</a></li>            
           </ul>
         </li> 
 		
@@ -87,11 +90,11 @@
         <li id="importbrand"><a href="importbrand.php"> <i class="glyphicon glyphicon-btc"></i> Import Brand </a></li>
 		<?php } ?>   
         <li class="dropdown" id="navSetting">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user"></i> <span class="caret"></span></a>
           <ul class="dropdown-menu">    
 			<?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
-            <li id="topNavSetting"><a href="setting.php"> <i class="fa fa-user"></i> Settings</a></li>
-            <li id="topNavUser"><a href="user.php"> <i class="glyphicon glyphicon-wrench"></i> Manage Users</a></li>
+            <li id="topNavSetting"><a href="setting.php"> <i class="fa fa-cog fa-spin fa-1x"></i> Settings</a></li>
+            <li id="topNavUser"><a href="user.php"> <i class="fa fa-user"></i> Manage User</a></li>
 <?php } ?>              
             <li id="topNavLogout"><a href="logout.php"> <i class="fa fa-power-off"></i> Logout</a></li>            
           </ul>
