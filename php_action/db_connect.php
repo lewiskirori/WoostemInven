@@ -2,7 +2,7 @@
 
 $localhost = "localhost";
 $username = "root";
-$password = "777";
+$password = "";
 $dbname = "woostem";
 $store_url = "http://127.0.0.1/WoostemInven/";
 // db connection
