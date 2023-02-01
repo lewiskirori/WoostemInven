@@ -1,177 +1,180 @@
-<?php 
-require_once 'php_action/db_connect.php';
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Woostem | Amazing Stock Control Sys</title>
+    <meta name="description"
+          content="Knight is a beautiful Bootstrap 4 template for product landing pages."/>
 
-session_start();
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
 
-if(isset($_SESSION['userId'])) {
-	header('location:'.$store_url.'dashboard.php');		
-}
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!--x-icon-->
+	<link rel="icon" type="image/x-icon" href="assests/images/woo-icon.ico" />
 
-$errors = array();
-
-if($_POST) {		
-
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-
-	if(empty($username) || empty($password)) {
-		if($username == "") {
-			$errors[] = "Username is required.";
-		} 
-
-		if($password == "") {
-			$errors[] = "Password is required.";
-		}
-	} else {
-		$sql = "SELECT * FROM users WHERE username = '$username'";
-		$result = $connect->query($sql);
-
-		if($result->num_rows == 1) {
-			$password = md5($password);
-			// exists
-			$mainSql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-			$mainResult = $connect->query($mainSql);
-
-			if($mainResult->num_rows == 1) {
-				$value = $mainResult->fetch_assoc();
-				$user_id = $value['user_id'];
-
-				// set session
-				$_SESSION['userId'] = $user_id;
-
-				header('location:'.$store_url.'dashboard.php');	
-			} else{
-				
-				$errors[] = "Incorrect username or password!";
-			} // /else
-		} else {		
-			$errors[] = "Username does not exist!";		
-		} // /else
-	} // /else not empty username // password
-	
-} // /if $_POST
-?>
-
-<!DOCTYPE html>
-<html>
-<head> <!--Woostem | Amazing Stock Control Mgnt-->
-	<title>Log in: Woostem</title>
-
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
-	<!-- bootstrap theme-->
-	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap-theme.min.css">
-	<!-- font awesome -->
-	<link rel="stylesheet" href="assests/font-awesome/css/font-awesome.min.css">
-	<!--x-icon-->
-	<link rel="icon" type="image/x-icon" href="woo-inv-log.png" />
-
-  <!-- custom css -->
-  <link rel="stylesheet" href="custom/css/custom.css">	
-
-  <!-- jquery -->
-	<script src="assests/jquery/jquery.min.js"></script>
-  <!-- jquery ui -->  
-  <link rel="stylesheet" href="assests/jquery-ui/jquery-ui.min.css">
-  <script src="assests/jquery-ui/jquery-ui.min.js"></script>
-
-  <!-- bootstrap js -->
-	<script src="assests/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
 </head>
 <body>
-	<div class="container">
-		<div class="row vertical">
-			<div class="col-md-5 col-md-offset-4 text-center">
-			<style>
-				.row{
-				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-				font-weight: bolder;
-				background-color: #1E282C;
-				color: gray;
-				border-radius: 4px;
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-				
-     		 }
-   	 		</style>
-				<a class="nav"href="http://127.0.0.1/WoostemInven/"><h1>Woostem Inven</h1></a>
-				<style>
-				h1,a{
-					font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-					font-weight: bolder;
-					color: gray;
-				}
-				</style>
-				<div class="panel">
-					<div class="panel-heading">
-						<h3 class="panel-title">Sign in to your Control Panel</h3>
-					</div>
-					<div class="panel-body">
-					<style>
-						.panel{
-							box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-							box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
-							border-radius: 4px;
-							background-color: transparent;
-							color: gray;
-						}
-					</style>
 
-						<div class="messages">
-							<?php if($errors) {
-								foreach ($errors as $key => $value) {
-									echo '<div class="alert alert-warning" role="alert">
-									<i class="glyphicon glyphicon-exclamation-sign"></i>
-									'.$value.'</div>';										
-									}
-								} ?>
-								<script>
-									///empty field error!
-									//This will help you to hide your message after 3 seconds with fadeOut animation.
-								// You can change seconds in timeout variable.
-								var timeout = 3000; // in miliseconds (3*1000)
+<!--navigation-->
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="">
+                Woo Inc.
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#info">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="signin.php">
+                            <em  class="fa fa-power-off" > </em> 
+                             Sign in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
 
-								$('.alert-warning').delay(timeout).fadeOut(300);
-								</script>
-						</div>
+<!--hero header-->
+<section class="py-7 py-md-0 bg-hero" id="home">
+    <div class="container">
+        <div class="row vh-md-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h1 class="heading-black text-capitalize">WOOSTEM</h1>
+                <p class="lead py-3">A control system that is quick, secure, and responsive, and is managed by stockholders and administrators.</p>
+                <button id="myButton" class="btn btn-primary d-inline-flex flex-row align-items-center">
+                    Get started now
+                    <em class="ml-2" data-feather="arrow-right"></em>
+                </button>
 
-						<form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="loginForm">
-							<fieldset>
-							  <div class="form-group">
-									<label for="username" class="col-sm-2 control-label">Username</label>
-									<div class="col-sm-10">
-									  <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" autocomplete="off" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="password" class="col-sm-2 control-label">Password</label>
-									<div class="col-sm-10">
-									  <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" />
-									</div>
-								</div>								
-								<div class="form-group">
-									<div class="col-sm-offset-2 col-sm-10">
-									  <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> LOGIN</button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-					<!-- panel-body -->
-				</div>
-				<!-- /panel -->
-			</div>
-			<!-- /col-md-4 -->
-		</div>
-		<!-- /row -->
-	</div>
-	<!-- container -->	
+                <script>
+                    document.getElementById("myButton").addEventListener("click", function() {
+                    window.location.href = "signin.php";
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- features section -->
+<section class="pt-6 pb-7" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">Woostem offers everything you need.</h2>
+                <p class="text-muted lead">Incredible Stock Control & Management Sys capable of Invoice generation, Lightweight and easy to use, Order management and product management can be done with ease, Report management, User wise view report..</p>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer class="py-6" id="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mr-auto">
+                <h5>About Woostem</h5>
+                <p class="text-muted">Woostem is a fast, secure, and responsive Database system created by Dev 67. It can manage system information by add, update, view and delete brand and product. The control system is a open-source software, and can be managed by stockholders and owners with provision.</p>
+                <ul class="list-inline social social-sm">
+                    <li class="list-inline-item">
+                        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://wa.me/+254783043031"><i class="fa fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#t&c">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Partner</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#stake">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#help&support">Support</a></li>
+                    <li><a href="signin.php">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; <?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> Woostem | All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--scroll to top-->
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION)-->
+<div class="switcher-wrap">
+    <div class="switcher-trigger">
+        <span class="fa fa-gear"></span>
+    </div>
+    <div class="color-switcher">
+        <h6>Color Switcher</h6>
+        <ul class="mt-3 clearfix">
+            <li class="bg-teal active" data-color="default" title="Default Teal"></li>
+            <li class="bg-purple" data-color="purple" title="Purple"></li>
+            <li class="bg-blue" data-color="blue" title="Blue"></li>
+            <li class="bg-red" data-color="red" title="Red"></li>
+            <li class="bg-green" data-color="green" title="Green"></li>
+            <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+            <li class="bg-orange" data-color="orange" title="Orange"></li>
+            <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+            <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
+            <li class="bg-pink" data-color="pink" title="Pink"></li>
+        </ul>
+        <p>These are distinguished colors. You can <b>easily</b> change to your suitable color scheme.</p>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-	

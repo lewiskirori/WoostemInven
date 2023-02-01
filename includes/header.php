@@ -13,7 +13,7 @@
 	<!-- font awesome -->
 	<link rel="stylesheet" href="assests/font-awesome/css/font-awesome.min.css">
   <!--x-icon-->
-  <link rel="icon" type="image/x-icon" href="woo-inv-log.png" />
+  <link rel="icon" type="image/x-icon" href="assests/images/woo-icon.ico" />
 
 
   <!-- custom css -->
@@ -54,7 +54,7 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a class="navbar-brand" href="#">Brand</a> -->
-	  <a class="navbar-brand" href="index.php" style="padding:0px;">
+	  <a class="navbar-brand" href="dashboard.php" style="padding:0px;">
                     <img src="woo-inv-log.png" alt="">
                 </a>
     </div>
@@ -64,7 +64,7 @@
 
       <ul class="nav navbar-nav navbar-right">        
 
-      	<li id="navDashboard"><a href="index.php"><i class="fa fa-dashboard"></i>  Dashboard</a></li>        
+      	<li id="navDashboard"><a href="dashboard.php"><i class="fa fa-dashboard"></i>  Dashboard</a></li>        
         <?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
         <li id="navBrand"><a href="brand.php"><i class="glyphicon glyphicon-tags"></i>  Brand</a></li>        
 		<?php } ?>
