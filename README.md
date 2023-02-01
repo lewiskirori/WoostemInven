@@ -1,8 +1,6 @@
 # Stock Management System
 Incredible Stock Control & Management System
 
-~Open source inventory management system with php and mysql.
-
 ~Invoice generation and easy to download invoice in PDF format.
 
 ~Lightweight and easy to use.
