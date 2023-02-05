@@ -94,7 +94,7 @@
           <ul class="dropdown-menu">    
 			<?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
             <li id="topNavSetting"><a href="setting.php"> <i class="fa fa-cog fa-spin fa-1x"></i> Settings</a></li>
-            <li id="topNavUser"><a href="user.php"> <i class="fa fa-user"></i> Manage User</a></li>
+            <li id="topNavUser"><a href="user.php"> <i class="fa fa-user"></i> Profile</a></li>
 <?php } ?>              
             <li id="topNavLogout"><a href="logout.php"> <i class="fa fa-power-off"></i> Logout</a></li>            
           </ul>
