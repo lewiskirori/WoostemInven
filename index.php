@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Woostem | Amazing Stock Control Sys</title>
+    <title>Woostem | Amazing Stock Control</title>
     <meta name="description"
           content="Knight is a beautiful Bootstrap 4 template for product landing pages."/>
 
@@ -45,7 +45,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="signin.php">
-                            <em  class="fa fa-power-off" > </em> 
+                            <i  class="fa fa-sign-in" > </i> 
                              Sign in
                         </a>
                     </li>
