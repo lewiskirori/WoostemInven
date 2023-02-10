@@ -1,6 +1,6 @@
 ## Stock Management System
-
-Incredible Stock Control & Management System
+```
+Incredible Stock Control Management System
 
 ~Invoice generation and easy to download invoice in PDF format.
 
@@ -11,7 +11,7 @@ Incredible Stock Control & Management System
 ~Report management.
 
 ~User wise view report.
-
+```
 ## Necessity
 
 ```
