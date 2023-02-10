@@ -99,7 +99,6 @@
             <li id="topNavLogout"><a href="logout.php"> <i class="fa fa-power-off"></i> Logout</a></li>            
           </ul>
         </li>        
-           
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
