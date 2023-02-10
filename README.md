@@ -1,4 +1,5 @@
-# Stock Management System
+## Stock Management System
+
 Incredible Stock Control & Management System
 
 ~Invoice generation and easy to download invoice in PDF format.
@@ -11,7 +12,7 @@ Incredible Stock Control & Management System
 
 ~User wise view report.
 
-# Necessity
+## Necessity
 
 ```
 //Require to change
@@ -21,3 +22,6 @@ store_url in db_connect.php
 Id : example@admin.dev
 pwd : AdmiN
 ```
+## License
+
+~MIT
