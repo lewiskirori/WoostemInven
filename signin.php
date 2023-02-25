@@ -158,7 +158,7 @@ if($_POST) {
 								</div>								
 								<div class="form-group">
 									<div>
-									  <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> LOGIN</button>
+									  <button type="submit" class="btn btn-primary">LOGIN</button>
 									</div>
 								</div>
 							</fieldset>
