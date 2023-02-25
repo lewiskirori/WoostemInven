@@ -10,7 +10,6 @@ if(isset($_SESSION['userId'])) {
 $errors = array();
 
 if($_POST) {		
-
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
@@ -58,7 +57,6 @@ if($_POST) {
 	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Log in: Woostem</title>
-
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
 	<!-- bootstrap theme-->
@@ -68,18 +66,18 @@ if($_POST) {
 	<!--x-icon-->
 	<link rel="icon" type="image/x-icon" href="assests/images/woo-icon.ico" />
 
-  <!-- custom css -->
-  <link rel="stylesheet" href="custom/css/custom.css">	
+	  <!-- custom css -->
+	  <link rel="stylesheet" href="custom/css/custom.css">	
 
-  <!-- jquery -->
-	<script src="assests/jquery/jquery.min.js"></script>
-  <!-- jquery ui -->  
-  <link rel="stylesheet" href="assests/jquery-ui/jquery-ui.min.css">
-  <script src="assests/jquery-ui/jquery-ui.min.js"></script>
-   <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+	  <!-- jquery -->
+		<script src="assests/jquery/jquery.min.js"></script>
+	  <!-- jquery ui -->  
+	  <link rel="stylesheet" href="assests/jquery-ui/jquery-ui.min.css">
+	  <script src="assests/jquery-ui/jquery-ui.min.js"></script>
+	   <!-- Google Font -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	  <!-- Font Awesome icons (free version)-->
+	  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
@@ -103,7 +101,7 @@ if($_POST) {
 				border-radius: 4px;
 				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 				
-     		 }
+     		 		}
    	 		</style>
 				<h1>Sign in</h1>
 				<style>
