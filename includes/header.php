@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Stock Control: Woostem</title>
 
 	<!-- bootstrap -->
@@ -78,7 +79,7 @@
         <li class="dropdown" id="navOrder">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-opencart"></i> Orders <span class="caret"></span></a>
           <ul class="dropdown-menu">            
-            <li id="topNavAddOrder"><a href="orders.php?o=add"> <i class="fa fa-spinner fa-spin fa-pulse"></i> Add Order</a></li>            
+            <li id="topNavAddOrder"><a href="orders.php?o=add"> <i class="fa fa-spinner"></i> Add Order</a></li>            
             <li id="topNavManageOrder"><a href="orders.php?o=manord"> <i class="fa fa-tasks"></i> Manage Order</a></li>            
           </ul>
         </li> 
@@ -93,8 +94,8 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user"></i> <span class="caret"></span></a>
           <ul class="dropdown-menu">    
 			<?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
-            <li id="topNavSetting"><a href="setting.php"> <i class="fa fa-cog fa-spin fa-1x"></i> Settings</a></li>
-            <li id="topNavUser"><a href="user.php"> <i class="fa fa-user"></i> Manage User</a></li>
+            <li id="topNavSetting"><a href="setting.php"> <i class="fa fa-cog fa-1x"></i> Settings</a></li>
+            <li id="topNavUser"><a href="user.php"> <i class="fa fa-user"></i> Profile</a></li>
 <?php } ?>              
             <li id="topNavLogout"><a href="logout.php"> <i class="fa fa-power-off"></i> Logout</a></li>            
           </ul>

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Woostem | Amazing Stock Control Sys</title>
+    <title>Woostem | Amazing Stock Control</title>
     <meta name="description"
           content="Knight is a beautiful Bootstrap 4 template for product landing pages."/>
 
@@ -45,7 +45,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="signin.php">
-                            <em  class="fa fa-power-off" > </em> 
                              Sign in
                         </a>
                     </li>
@@ -108,7 +107,7 @@
                         <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://wa.me/+254783043031"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://wa.me/+254738400313"><i class="fa fa-whatsapp"></i></a>
                     </li>
                 </ul>
             </div>
@@ -135,7 +134,7 @@
         </div>
         <div class="row mt-5">
             <div class="col-12 text-muted text-center small-xl">
-                &copy; <?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> Woostem | All Rights Reserved.
+                &copy; <?php echo $company_data['company_name'] ?? '' ?>2022 - <?php echo date('Y') ?> Woostem | All Rights Reserved.
             </div>
         </div>
     </div>
