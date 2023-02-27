@@ -69,7 +69,7 @@ $connect->close();
                 $(".toast-success > .toast-header > .toast-icon").addClass("rounded-circle");
            }
         };
-        toastr.success("Login was successful!");';
+        toastr.success("Login was successful<br>Welcome back!");';
       echo '</script>';
       $_SESSION['toastShown'] = true;
     }
@@ -126,10 +126,12 @@ $connect->close();
                     font-weight: bolder;
                   }
             </style>
-		    <h1><?php  /* This sets the $time variable to the current hour in the 24 hour clock format */
-    $time = date("H");
+		    <h1><?php  
     /* Set the $timezone variable to become the current timezone */
     date_default_timezone_set('Africa/Nairobi');
+    
+    /* This sets the $time variable to the current hour in the 24 hour clock format */
+    $time = date("H");
     
     /* If the time is less than 1200 hours, show good morning */
     if ($time < "12") {
@@ -140,12 +142,12 @@ $connect->close();
         echo "Good Afternoon";
     } else
     /* Should the time be between or equal to 1600 and 2000 hours, show good evening */
-    if ($time >= "16" && $time < "20") {
+    if ($time >= "16" && $time < "22") {
         echo "Good Evening";
     } else
     /* Finally, show good night if the time is greater than or equal to 2000 hours */
-    if ($time >= "20") {
-        echo "Shouldn't you be in bed?.<br>Good Night";
+    if ($time >= "22") {
+        echo "Shouldn't you be in bed?<br>Good Night";
     }
     ?><br></span></a></h1>
 		  </div>

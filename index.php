@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Woostem | Amazing Stock Control</title>
     <meta name="description"
-          content="Woostem | Amazing Stock Control."/>
+          content="Knight is a beautiful Bootstrap 4 template for product landing pages."/>
 
     <!--Inter UI font-->
     <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
@@ -38,17 +38,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#features">About Us</a>
+                        <a class="nav-link page-scroll" href="#features">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#info">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="signin.php">
-<<<<<<< HEAD
-=======
-                            <i  class="fa fa-sign-in" > </i> 
->>>>>>> 758d8b3af357fa1f366f6062614b0b1d2239035b
                              Sign in
                         </a>
                     </li>
@@ -64,18 +60,71 @@
         <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
                 <h1 class="heading-black text-capitalize">WOOSTEM</h1>
-                <p class="lead py-3">A control system that is quick, secure, and responsive, and is managed by stockholders and administrators.</p>
-                <button id="myButton" class="btn btn-primary d-inline-flex flex-row align-items-center">
-                    Get started now
-                    <em class="ml-2" data-feather="arrow-right"></em>
+                <p class="lead py-3">A control system that is managed by both stockholders and administrators and delivers speedy, secure, and responsive performance in essential.</p>
+                <button id="myButton" class="btn btn-primary d-inline-flex flex-row align-items-center arrow-right">
+                  Get started now
+                  <em class="ml-2" data-feather="arrow-right"></em>
+                  <span class="ripple"></span>
                 </button>
-
+                
+                <style>
+                  #myButton {
+                    position: relative;
+                    overflow: hidden;
+                  }
+                  
+                  #myButton .ripple {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    pointer-events: none;
+                    background-image: radial-gradient(circle, rgba(255,255,255,.5) 10%, transparent 10.01%);
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    transform: scale(10, 10);
+                    opacity: 0;
+                    transition: transform .5s, opacity 1s;
+                  }
+                  
+                  #myButton:active .ripple {
+                    transform: scale(0, 0);
+                    opacity: 0.5;
+                    transition: 0s;
+                  }
+                  
+                  button.arrow-right:hover em {
+                    animation: arrow-right 0.5s ease-in-out 1 forwards;
+                  }
+                  
+                  @keyframes arrow-right {
+                    0% {
+                      transform: translateX(0);
+                    }
+                    50% {
+                      transform: translateX(5px);
+                    }
+                    100% {
+                      transform: translateX(3px);
+                    }
+                  }
+                </style>
                 <script>
                     document.getElementById("myButton").addEventListener("click", function() {
                     window.location.href = "signin.php";
                     });
+                    $('#myButton').on('click', function(e) {
+                  var ripple = $('<span class="ripple"></span>');
+                  var x = e.pageX - $(this).offset().left;
+                  var y = e.pageY - $(this).offset().top;
+                  ripple.css({
+                    left: x,
+                    top: y
+                  });
+                  $(this).append(ripple);
+                });
                 </script>
-
             </div>
         </div>
     </div>
@@ -87,7 +136,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
                 <h2 class="heading-black">Woostem offers everything you need.</h2>
-                <p class="text-muted lead">Incredible Stock Control & Management Sys capable of Invoice generation, Lightweight and easy to use, Order management and product management can be done with ease, Report management, User wise view report..</p>
+                <p class="text-muted lead">Incredible stock control & management system capable of invoice generation, lightweight and easy to use, order management and product management can be done with ease, report management, user wise view report..</p>
             </div>
         </div>
         
@@ -102,7 +151,7 @@
         <div class="row">
             <div class="col-sm-5 mr-auto">
                 <h5>About Woostem</h5>
-                <p class="text-muted">Woostem is a fast, secure, and responsive Database system created by Dev 67. It can manage system information by add, update, view and delete brand and product. The control system is a open-source software, and can be managed by stockholders and owners with provision.</p>
+                <p class="text-muted">Woostem is a responsive database system created by Dev 67. It can manage system information by add, update, view and delete brand and product order. The control system is a open-source software, and can be managed by stockholders and owners with provision.</p>
                 <ul class="list-inline social social-sm">
                     <li class="list-inline-item">
                         <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
@@ -138,7 +187,7 @@
         </div>
         <div class="row mt-5">
             <div class="col-12 text-muted text-center small-xl">
-                &copy; <?php echo $company_data['company_name'] ?? '' ?>2022 - <?php echo date('Y') ?> Woostem | All Rights Reserved.
+                &copy;<?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> Woostem | All Rights Reserved.
             </div>
         </div>
     </div>
