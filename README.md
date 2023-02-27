@@ -1,7 +1,6 @@
-# Stock Management System
-Incredible Stock Control & Management System
-
-~Open source inventory management system with php and mysql.
+## Stock Management System
+```
+Incredible Stock Control Management System
 
 ~Invoice generation and easy to download invoice in PDF format.
 
@@ -12,8 +11,8 @@ Incredible Stock Control & Management System
 ~Report management.
 
 ~User wise view report.
-
-# Necessity
+```
+## Necessity
 
 ```
 //Require to change
@@ -21,5 +20,9 @@ store_url in db_connect.php
 
 //Login Credentials
 Id : example@admin.dev
-password : AdmiN
+pwd : AdmiN
+```
+## License
+```
+~MIT
 ```

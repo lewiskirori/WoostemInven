@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Woostem | Amazing Stock Control</title>
     <meta name="description"
-          content="Knight is a beautiful Bootstrap 4 template for product landing pages."/>
+          content="Woostem | Amazing Stock Control."/>
 
     <!--Inter UI font-->
     <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
@@ -45,6 +45,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="signin.php">
+<<<<<<< HEAD
+=======
+                            <i  class="fa fa-sign-in" > </i> 
+>>>>>>> 758d8b3af357fa1f366f6062614b0b1d2239035b
                              Sign in
                         </a>
                     </li>

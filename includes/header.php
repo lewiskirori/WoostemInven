@@ -3,8 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+=======
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+>>>>>>> 758d8b3af357fa1f366f6062614b0b1d2239035b
 	<title>Stock Control: Woostem</title>
 
 	<!-- bootstrap -->
@@ -100,7 +105,6 @@
             <li id="topNavLogout"><a href="logout.php"> <i class="fa fa-power-off"></i> Logout</a></li>            
           </ul>
         </li>        
-           
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -505,7 +505,11 @@ if($_GET['o'] == 'add') {
 				      	} ?>  >In Nairobi</option>
 				      	<option value="2" <?php if($data[13] == 2) {
 				      		echo "selected";
+<<<<<<< HEAD
 				      	} ?> >Out of Nairobi</option> 
+=======
+				      	} ?> >Out of Nairobi</option>
+>>>>>>> 758d8b3af357fa1f366f6062614b0b1d2239035b
 				      </select>
 				    </div>
 				  </div>							  
