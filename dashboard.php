@@ -57,7 +57,19 @@ $connect->close();
     
     if(isset($_SESSION['userId']) && $_SESSION['userId']==1 && !isset($_SESSION['toastShown'])) {
       echo '<script type="text/javascript">';
-      echo 'toastr.success("Login was successful!");';
+      echo 'toastr.options = {
+           "closeButton": true,
+           "progressBar": false,
+           "positionClass": "toast-top-right",
+           "showDuration": "300",
+           "hideDuration": "1000",
+           "timeOut": "5000",
+           "extendedTimeOut": "1000",
+           "onShown": function () {
+                $(".toast-success > .toast-header > .toast-icon").addClass("rounded-circle");
+           }
+        };
+        toastr.success("Login was successful!");';
       echo '</script>';
       $_SESSION['toastShown'] = true;
     }
