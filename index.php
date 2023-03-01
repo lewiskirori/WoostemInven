@@ -186,8 +186,8 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-12 text-muted text-center small-xl">
-                &copy;<?php echo $company_data['company_name'] ?? '' ?>2022-<?php echo date('Y') ?> Woostem | All Rights Reserved.
+            <div class="col-12 text-muted text-center small-xl"> Woostem
+                &copy;<?php echo $company_data['company_name'] ?? '' ?> 2022-<?php echo date('Y') ?> | All Rights Reserved.
             </div>
         </div>
     </div>
