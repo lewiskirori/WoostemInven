@@ -60,7 +60,7 @@
         <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
                 <h1 class="heading-black text-capitalize">WOOSTEM</h1>
-                <p class="lead py-3">A control system that is managed by both stockholders and administrators and delivers speedy, secure, and responsive performance in essential.</p>
+                <p class="lead py-3">A control system that is managed by both stockholders and administrators and delivers speedy, secure, and responsive performance essentially.</p>
                 <button id="myButton" class="btn btn-primary d-inline-flex flex-row align-items-center arrow-right">
                   Get started now
                   <em class="ml-2" data-feather="arrow-right"></em>
@@ -111,19 +111,23 @@
                   }
                 </style>
                 <script>
-                    document.getElementById("myButton").addEventListener("click", function() {
-                    window.location.href = "signin.php";
+                    document.getElementById("myButton").addEventListener("click", function(e) {
+                      // Prevent the default behavior of the button click event
+                      e.preventDefault();
+                      
+                      // Add the ripple effect to the button
+                      var ripple = $('<span class="ripple"></span>');
+                      var x = e.pageX - $(this).offset().left;
+                      var y = e.pageY - $(this).offset().top;
+                      ripple.css({
+                        left: x,
+                        top: y
+                      });
+                      $(this).append(ripple);
+                      
+                      // Redirect to the desired page
+                      window.location.href = "signin.php";
                     });
-                    $('#myButton').on('click', function(e) {
-                  var ripple = $('<span class="ripple"></span>');
-                  var x = e.pageX - $(this).offset().left;
-                  var y = e.pageY - $(this).offset().top;
-                  ripple.css({
-                    left: x,
-                    top: y
-                  });
-                  $(this).append(ripple);
-                });
                 </script>
             </div>
         </div>
