@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <!--x-icon-->
 	<link rel="icon" type="image/x-icon" href="assests/images/woo-icon.ico" />
-
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/default.css" id="theme-color">
 </head>
@@ -72,7 +71,6 @@
                     position: relative;
                     overflow: hidden;
                   }
-                  
                   #myButton .ripple {
                     position: absolute;
                     width: 100%;
@@ -87,17 +85,14 @@
                     opacity: 0;
                     transition: transform .5s, opacity 1s;
                   }
-                  
                   #myButton:active .ripple {
                     transform: scale(0, 0);
                     opacity: 0.5;
                     transition: 0s;
                   }
-                  
                   button.arrow-right:hover em {
                     animation: arrow-right 0.5s ease-in-out 1 forwards;
                   }
-                  
                   @keyframes arrow-right {
                     0% {
                       transform: translateX(0);
