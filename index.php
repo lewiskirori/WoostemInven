@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Woostem | Amazing Stock Control</title>
     <meta name="description"
-          content="Knight is a beautiful Bootstrap 4 template for product landing pages."/>
-
     <!--Inter UI font-->
     <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
-
     <!--vendors styles-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -21,7 +18,6 @@
     <link rel="stylesheet" href="css/default.css" id="theme-color">
 </head>
 <body>
-
 <!--navigation-->
 <section class="smart-scroll">
     <div class="container-fluid">
@@ -109,7 +105,6 @@
                     document.getElementById("myButton").addEventListener("click", function(e) {
                       // Prevent the default behavior of the button click event
                       e.preventDefault();
-                      
                       // Add the ripple effect to the button
                       var ripple = $('<span class="ripple"></span>');
                       var x = e.pageX - $(this).offset().left;
@@ -119,7 +114,6 @@
                         top: y
                       });
                       $(this).append(ripple);
-                      
                       // Redirect to the desired page
                       window.location.href = "signin.php";
                     });
@@ -142,7 +136,6 @@
         </div>
     </div>
 </section>
-
 
 <!--footer-->
 <footer class="py-6" id="info">
@@ -196,7 +189,7 @@
     <i class="fa fa-angle-up" aria-hidden="true"></i>
 </div>
 
-<!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION)-->
+<!-- theme switcher -->
 <div class="switcher-wrap">
     <div class="switcher-trigger">
         <span class="fa fa-gear"></span>
