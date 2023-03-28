@@ -18,7 +18,7 @@ Incredible Stock Control Management System
 //Require to change
 store_url in db_connect.php
 
-//Login Credentials
+//Login credentials
 Id : example@admin.dev
 pwd : AdmiN
 ```
