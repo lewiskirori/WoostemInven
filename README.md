@@ -17,7 +17,6 @@ Incredible Stock Control Management System
 ```
 //Require to change
 store_url in db_connect.php
-
 ```
 ## License
 ```
