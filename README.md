@@ -19,7 +19,7 @@ Incredible Stock Control Management System
 store_url in db_connect.php
 
 //Login credentials
-Id : example@admin.dev
+id : example@admin.dev
 pwd : AdmiN
 ```
 ## License
