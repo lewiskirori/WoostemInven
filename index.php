@@ -51,7 +51,7 @@
         <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
                 <h1 class="heading-black text-capitalize">WOOSTEM</h1>
-                <p class="lead py-3">A control system that is managed by both stockholders and administrators and delivers speedy, secure, and responsive performance essentially.</p>
+                <p class="lead py-3">A control system that is managed by both stockholders and administrators and delivers speedy, secure, and responsive performance in essential.</p>
                 <button id="myButton" class="btn btn-primary d-inline-flex flex-row align-items-center arrow-right">
                   Get started now
                   <em class="ml-2" data-feather="arrow-right"></em>
