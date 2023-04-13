@@ -125,7 +125,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
                 <h2 class="heading-black">Woostem offers everything you need.</h2>
-                <p class="text-muted lead">Incredible stock control & management system capable of invoice generation, lightweight and easy to use, order management and product management can be done with ease, report management, user wise view report..</p>
+                <p class="text-muted lead">Incredible stock control & management system capable of invoice generation, lightweight and easy to use, order management and product management can be done with ease, report management, user wise view report.</p>
             </div>
         </div>
         
