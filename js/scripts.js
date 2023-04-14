@@ -60,7 +60,7 @@ $(function () {
         }, 1000);
     });
 
-    /**Theme switcher - DEMO PURPOSE ONLY */
+    /**Theme switcher **/
     $('.switcher-trigger').click(function () {
         $('.switcher-wrap').toggleClass('active');
     });

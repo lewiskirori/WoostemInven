@@ -35,20 +35,19 @@ if($_POST) {
 				$value = $mainResult->fetch_assoc();
 				$user_id = $value['user_id'];
 
-				// set session
 				$_SESSION['userId'] = $user_id;
 
 				header('location:'.$store_url.'dashboard.php');	
 			} else{
 				
 				$errors[] = "Incorrect username or password!";
-			} // /else
+			}
 		} else {		
 			$errors[] = "Username does not exist!";		
-		} // /else
-	} // /else not empty username // password
+		} 
+	} 
 	
-} // /if $_POST
+}
 ?>
 
 <!DOCTYPE html>
@@ -57,31 +56,18 @@ if($_POST) {
 	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Log in: Woostem</title>
-	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
-	<!-- bootstrap theme-->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap-theme.min.css">
-	<!-- font awesome -->
 	<link rel="stylesheet" href="assests/font-awesome/css/font-awesome.min.css">
-	<!--x-icon-->
 	<link rel="icon" type="image/x-icon" href="assests/images/woo-icon.ico" />
-
-	  <!-- custom css -->
 	  <link rel="stylesheet" href="custom/css/custom.css">	
-
-	  <!-- jquery -->
 		<script src="assests/jquery/jquery.min.js"></script>
-	  <!-- jquery ui -->  
 	  <link rel="stylesheet" href="assests/jquery-ui/jquery-ui.min.css">
 	  <script src="assests/jquery-ui/jquery-ui.min.js"></script>
-	   <!-- Google Font -->
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-	  <!-- Font Awesome icons (free version)-->
 	  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-  <!-- bootstrap js -->
 	<script src="assests/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -134,10 +120,7 @@ if($_POST) {
 									}
 								} ?>
 								<script>
-									///empty field error!
-									//This will help you to hide your message after 3 seconds with fadeOut animation.
-								// You can change seconds in timeout variable.
-								var timeout = 3000; // in miliseconds (3*1000)
+								var timeout = 3000; 
 
 								$('.alert-warning').delay(timeout).fadeOut(300);
 								</script>
@@ -162,15 +145,10 @@ if($_POST) {
 							</fieldset>
 						</form>
 					</div>
-					<!-- panel-body -->
 				</div>
-				<!-- /panel -->
 			</div>
-			<!-- /col-md-4 -->
 		</div>
-		<!-- /row -->
-	</div>
-	<!-- container -->	
+	</div>	
 </body>
 </html>
 

@@ -43,12 +43,10 @@ $connect->close();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css" integrity="sha384-P7VH0zmjK7Vu1lK2e9Vn8WgOzHiMIgwYfQjnXM8xWx1zaxvOMJGlebzjh13tWGZ" crossorigin="anonymous">
-
 <!-- SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js" integrity="sha384-R9XN826ZWSWlHva1uKJjK0A8f0FG+HvOJmBhPkK9UJMi6UZptKw97T6Tguc6LnJ" crossorigin="anonymous"></script>
 <!-- Toastr CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
 <!-- Toastr JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
@@ -79,14 +77,11 @@ $connect->close();
 	<?php  if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
 	<div class="col-md-4">
 		<div class="panel panel-success">
-
 			<div class="panel-heading">
-				
 				<a href="product.php" style="text-decoration:none;color:black;">
 					Total Product
 					<span class="badge pull pull-right"><?php echo $countProduct; ?></span>	
 				</a>
-				
 			</div> <!--/panel-hdeaing-->
 		</div> <!--/panel-->
 	</div> <!--/col-md-4-->
@@ -102,7 +97,6 @@ $connect->close();
 			</div> <!--/panel-hdeaing-->
 		</div> <!--/panel-->
 	</div> <!--/col-md-4-->
-	
 	<?php } ?>  
 		<div class="col-md-4">
 			<div class="panel panel-info">
@@ -172,7 +166,6 @@ $connect->close();
 		    		echo '0';
 		    		} ?></h1>
 		  </div>
-
 		  <div class="cardContainer">
 		    <p> INR Total Revenue (KSHS)</p>
 		  </div>
@@ -197,7 +190,6 @@ $connect->close();
 						<tr>
 							<td><?php echo $orderResult['username']?></td>
 							<td><?php echo $orderResult['totalorder']?></td>
-							
 						</tr>
 						
 					<?php } ?>
@@ -238,8 +230,6 @@ $connect->close();
           month: 'month'          
         }        
       });
-
-
     });
     
 </script>
