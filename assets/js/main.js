@@ -74,12 +74,15 @@
   /**
    * Preloader
    */
-  let preloader = select('#preloader');
+  document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector("#preloader");
   if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
+      preloader.classList.add("hide");
+      setTimeout(() => {
+          preloader.remove();
+      }, 1000);
   }
+  });
 
   /**
    * Back to top button
