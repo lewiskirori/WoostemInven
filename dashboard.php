@@ -43,10 +43,12 @@ $connect->close();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css" integrity="sha384-P7VH0zmjK7Vu1lK2e9Vn8WgOzHiMIgwYfQjnXM8xWx1zaxvOMJGlebzjh13tWGZ" crossorigin="anonymous">
+
 <!-- SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js" integrity="sha384-R9XN826ZWSWlHva1uKJjK0A8f0FG+HvOJmBhPkK9UJMi6UZptKw97T6Tguc6LnJ" crossorigin="anonymous"></script>
 <!-- Toastr CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 <!-- Toastr JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
@@ -72,16 +74,71 @@ $connect->close();
       $_SESSION['toastShown'] = true;
     }
     ?>
+    
+    <!-- Page loader -->
+     <div id="preloader">
+         <style>
+            #preloader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 9999;
+              overflow: hidden;
+              background: #fff;
+            }
+            
+            #preloader:before {
+              content: "";
+              position: fixed;
+              top: calc(50% - 30px);
+              left: calc(50% - 30px);
+              border: 6px solid #428bca;
+              border-top-color: #fff;
+              border-bottom-color: #fff;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              animation: animate-preloader 1s linear infinite;
+            }
+            
+            @keyframes animate-preloader {
+              0% {
+                transform: rotate(0deg);
+              }
+            
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+         </style>
+         
+         <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const preloader = document.querySelector("#preloader");
+                if (preloader) {
+                    preloader.classList.add("hide");
+                    setTimeout(() => {
+                        preloader.remove();
+                    }, 1000);
+                }
+            });
+        </script>
+     </div>
 
 <div class="row">
 	<?php  if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
 	<div class="col-md-4">
 		<div class="panel panel-success">
+
 			<div class="panel-heading">
+				
 				<a href="product.php" style="text-decoration:none;color:black;">
 					Total Product
 					<span class="badge pull pull-right"><?php echo $countProduct; ?></span>	
 				</a>
+				
 			</div> <!--/panel-hdeaing-->
 		</div> <!--/panel-->
 	</div> <!--/col-md-4-->
@@ -97,6 +154,7 @@ $connect->close();
 			</div> <!--/panel-hdeaing-->
 		</div> <!--/panel-->
 	</div> <!--/col-md-4-->
+	
 	<?php } ?>  
 		<div class="col-md-4">
 			<div class="panel panel-info">
@@ -166,6 +224,7 @@ $connect->close();
 		    		echo '0';
 		    		} ?></h1>
 		  </div>
+
 		  <div class="cardContainer">
 		    <p> INR Total Revenue (KSHS)</p>
 		  </div>
@@ -176,7 +235,7 @@ $connect->close();
 	<?php  if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
 	<div class="col-md-8">
 		<div class="panel panel-default">
-			<div class="panel-heading"> <i class="glyphicon glyphicon-calendar"></i> User Wise Order</div>
+			<div class="panel-heading"> <i class="glyphicon glyphicon-calendar"></i> User Order</div>
 			<div class="panel-body">
 				<table class="table" id="productTable">
 			  	<thead>
@@ -190,6 +249,7 @@ $connect->close();
 						<tr>
 							<td><?php echo $orderResult['username']?></td>
 							<td><?php echo $orderResult['totalorder']?></td>
+							
 						</tr>
 						
 					<?php } ?>
@@ -230,6 +290,8 @@ $connect->close();
           month: 'month'          
         }        
       });
+
+
     });
     
 </script>
