@@ -70,98 +70,98 @@ if($_POST) {
 	<script src="assests/bootstrap/js/bootstrap.min.js"></script>
 	<style>
 	    body {
-      background-image: url('https://cdn.pixabay.com/photo/2018/04/29/11/54/wood-3352328_960_720.jpg');
-      background-size: cover;
-      background-position: center;
-      font-family: 'Open Sans', sans-serif;
-    }
-    
-    .container {
-      margin-top: 5%;
-    }
-    
-    .breadcrumb {
-      background-color: transparent;
-      margin-bottom: 0;
-      font-size: 16px;
-    }
+		background-image: url('https://cdn.pixabay.com/photo/2018/04/29/11/54/wood-3352328_960_720.jpg');
+		background-size: cover;
+		background-position: center;
+		font-family: 'Open Sans', sans-serif;
+		}
+		
+		.container {
+		margin-top: 5%;
+		}
+		
+		.breadcrumb {
+		background-color: transparent;
+		margin-bottom: 0;
+		font-size: 16px;
+		}
 
-    .breadcrumb li {
-      display: inline-block;
-      margin-right: 5px;
-      color: #525252;
-    }
+		.breadcrumb li {
+		display: inline-block;
+		margin-right: 5px;
+		color: #525252;
+		}
 
-    .breadcrumb li a {
-      color: #525252;
-      text-decoration: none;
-    }
+		.breadcrumb li a {
+		color: #525252;
+		text-decoration: none;
+		}
 
-    .breadcrumb li.active {
-      color: #333;
-    }
-    
-    .panel {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      border-radius: 50px;
-      background-color: #fff;
-      padding: 30px;
-    }
-    
-    .panel-title {
-      font-weight: 600;
-      color: #333;
-      text-align: center;
-      font-size: 28px;
-    }
-    
-    .form-control {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      border: none;
-      border-radius: 5px;
-      color: #333;
-      font-weight: 600;
-      padding: 10px;
-      font-size: 16px;
-      outline: none;
-      border: 2px solid #aaa;
-    }
-    
-    .form-control:focus {
-       outline: none;
-       box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-    }
+		.breadcrumb li.active {
+		color: #333;
+		}
+		
+		.panel {
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 50px;
+		background-color: #fff;
+		padding: 30px;
+		}
+		
+		.panel-title {
+		font-weight: 600;
+		color: #333;
+		text-align: center;
+		font-size: 28px;
+		}
+		
+		.form-control {
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		border: none;
+		border-radius: 5px;
+		color: #333;
+		font-weight: 600;
+		padding: 10px;
+		font-size: 16px;
+		outline: none;
+		border: 2px solid #aaa;
+		}
+		
+		.form-control:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+		}
 
-    .form-group {
-      margin-bottom: 30px;
-    }
-    
-    label.control-label {
-      font-size: 20px;
-      color: #333;
-      margin-right: 10px;
-    }
-    
-    button.btn-primary {
-      background-color: #525252;
-      border: none;
-      border-radius: 5px;
-      font-weight: 600;
-    }
-    
-    button.btn-primary:hover {
-      background-color: #333;
-    }
-    
-    @media only screen and (max-width: 767px) {
-      .panel {
-        padding: 20px;
-      }
-      
-      .panel-title {
-        font-size: 24px;
-      }
-    }
+		.form-group {
+		margin-bottom: 30px;
+		}
+		
+		label.control-label {
+		font-size: 20px;
+		color: #333;
+		margin-right: 10px;
+		}
+		
+		button.btn-primary {
+		background-color: #525252;
+		border: none;
+		border-radius: 5px;
+		font-weight: 600;
+		}
+		
+		button.btn-primary:hover {
+		background-color: #333;
+		}
+		
+		@media only screen and (max-width: 767px) {
+		.panel {
+			padding: 20px;
+		}
+		
+		.panel-title {
+			font-size: 24px;
+		}
+		}
 	</style>
   </head>
   <body>
