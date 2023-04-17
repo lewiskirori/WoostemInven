@@ -54,185 +54,207 @@ if($_POST) {
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Log in - Woostem</title>
-
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
-	<!-- bootstrap theme-->
-	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap-theme.min.css">
-	<!-- font awesome -->
-	<link rel="stylesheet" href="assests/font-awesome/css/font-awesome.min.css">
-	<!--x-icon-->
+  <head>
+    <title>Login - Woostem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="icon" type="image/x-icon" href="assests/images/woo-icon.ico" />
-
-  <!-- custom css -->
-  <link rel="stylesheet" href="custom/css/custom.css">	
-
-  <!-- jquery -->
 	<script src="assests/jquery/jquery.min.js"></script>
-  <!-- jquery ui -->  
-  <link rel="stylesheet" href="assests/jquery-ui/jquery-ui.min.css">
-  <script src="assests/jquery-ui/jquery-ui.min.js"></script>
-  
-   <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-
-  <!-- bootstrap js -->
+    <link rel="stylesheet" href="assests/jquery-ui/jquery-ui.min.css">
+    <script src="assests/jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 	<script src="assests/bootstrap/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<div class="container">
-			<ol class="breadcrumb">
-  				<li><a href="index.php"><i class="fas fa-home"></i> Home </a></li>
-  				<li class="active"> Log In Woostem </li>
-			</ol>
-		<div class="row vertical">
-			<div class="col-md-5 col-md-offset-4 text-center">
-			<style>
-				.row {
-				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-				font-weight: bolder;
-				background-color: #1E282C;
-				color: gray;
-				border-radius: 4px;
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-     		    }
-     		    a:hover {
-     		     text-decoration: none;
-     		    }
-   	 		</style>
-				<h1>Sign in</h1>
-				<style>
-				h1,a{
-					font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-					font-weight: bolder;
-					color: gray;
-				}
-				</style>
-				<div class="panel">
-					<div class="panel-heading">
-					</div>
-					<div class="panel-body">
-					<style>
-						.panel{
-							box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-							box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
-							border-radius: 4px;
-							background-color: transparent;
-							color: gray;
-						}
-					</style>
+	<style>
+	    body {
+      background-image: url('https://cdn.pixabay.com/photo/2018/04/29/11/54/wood-3352328_960_720.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .container {
+      margin-top: 5%;
+    }
+    
+    .breadcrumb {
+      background-color: transparent;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
 
-						<div class="messages">
-							<?php if($errors) {
-								foreach ($errors as $key => $value) {
-									echo '<div class="alert alert-warning" role="alert">
-									<i class="glyphicon glyphicon-exclamation-sign"></i>
-									'.$value.'</div>';										
-									}
-								} ?>
-								<script>
-									///empty field error!
-									//This will help you to hide your message after 3 seconds with fadeOut animation.
-								// You can change seconds in timeout variable.
-								var timeout = 3000; // in miliseconds (3*1000)
+    .breadcrumb li {
+      display: inline-block;
+      margin-right: 5px;
+      color: #525252;
+    }
 
-								$('.alert-warning').delay(timeout).fadeOut(300);
-								</script>
-						</div>
-						
-						<!-- Page loader -->
-                         <div id="preloader">
-                             <style>
-                                #preloader {
-                                  position: fixed;
-                                  top: 0;
-                                  left: 0;
-                                  right: 0;
-                                  bottom: 0;
-                                  z-index: 9999;
-                                  overflow: hidden;
-                                  background: #fff;
-                                }
-                                
-                                #preloader:before {
-                                  content: "";
-                                  position: fixed;
-                                  top: calc(50% - 30px);
-                                  left: calc(50% - 30px);
-                                  border: 6px solid #428bca;
-                                  border-top-color: #fff;
-                                  border-bottom-color: #fff;
-                                  border-radius: 50%;
-                                  width: 60px;
-                                  height: 60px;
-                                  animation: animate-preloader 1s linear infinite;
-                                }
-                                
-                                @keyframes animate-preloader {
-                                  0% {
-                                    transform: rotate(0deg);
-                                  }
-                                
-                                  100% {
-                                    transform: rotate(360deg);
-                                  }
-                                }
-                             </style>
-                             
-                             <script>
-                                document.addEventListener("DOMContentLoaded", () => {
-                                    const preloader = document.querySelector("#preloader");
-                                    if (preloader) {
-                                        preloader.classList.add("hide");
-                                        setTimeout(() => {
-                                            preloader.remove();
-                                        }, 1000);
-                                    }
-                                });
-                            </script>
-                         </div>
+    .breadcrumb li a {
+      color: #525252;
+      text-decoration: none;
+    }
 
-						<form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="loginForm">
-							<fieldset>
-							  <div class="form-group has-feedback">
-									  <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" autocomplete="on" />
-									  <span class="glyphicon glyphicon-user form-control-feedback"></span>
-								</div>
-								<div class="form-group has-feedback">
-							
-									  <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" autocomplete="on" />
-									  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-								</div>								
-								<div class="form-group">
-									<div>
-									  <button type="submit" class="btn btn-primary"> 
-									    LOGIN
-									  </button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-					<!-- panel-body -->
-				</div>
-				<!-- /panel -->
-			</div>
-			<!-- /col-md-4 -->
-		</div>
-		<!-- /row -->
-	</div>
-	<!-- container -->
-</body>
+    .breadcrumb li.active {
+      color: #333;
+    }
+    
+    .panel {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+      background-color: #fff;
+      padding: 30px;
+    }
+    
+    .panel-title {
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      font-size: 28px;
+    }
+    
+    .form-control {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 5px;
+      color: #333;
+      font-weight: 600;
+      padding: 10px;
+      font-size: 16px;
+      outline: none;
+      border: 2px solid #aaa;
+    }
+    
+    .form-control:focus {
+       outline: none;
+       box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+    
+    label.control-label {
+      font-size: 20px;
+      color: #333;
+      margin-right: 10px;
+    }
+    
+    button.btn-primary {
+      background-color: #525252;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    
+    button.btn-primary:hover {
+      background-color: #333;
+    }
+    
+    @media only screen and (max-width: 767px) {
+      .panel {
+        padding: 20px;
+      }
+      
+      .panel-title {
+        font-size: 24px;
+      }
+    }
+	</style>
+  </head>
+  <body>
+    <div class="container">
+        <ol class="breadcrumb">
+      			<li><a href="index.php"><i class="fas fa-home"></i> Home </a></li>
+      			<li class="active"><a href=""> Log In </a></li>
+    	</ol>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Sign in</h3>
+            </div>
+            <div class="panel-body">
+                <!-- Page loader -->
+                 <div id="preloader">
+                     <style>
+                        #preloader {
+                          position: fixed;
+                          top: 0;
+                          left: 0;
+                          right: 0;
+                          bottom: 0;
+                          z-index: 9999;
+                          overflow: hidden;
+                          background: #fff;
+                        }
+                        
+                        #preloader:before {
+                          content: "";
+                          position: fixed;
+                          top: calc(50% - 30px);
+                          left: calc(50% - 30px);
+                          border: 6px solid #428bca;
+                          border-top-color: #fff;
+                          border-bottom-color: #fff;
+                          border-radius: 50%;
+                          width: 60px;
+                          height: 60px;
+                          animation: animate-preloader 1s linear infinite;
+                        }
+                        
+                        @keyframes animate-preloader {
+                          0% {
+                            transform: rotate(0deg);
+                          }
+                        
+                          100% {
+                            transform: rotate(360deg);
+                          }
+                        }
+                     </style>
+                     
+                     <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const preloader = document.querySelector("#preloader");
+                            if (preloader) {
+                                preloader.classList.add("hide");
+                                setTimeout(() => {
+                                    preloader.remove();
+                                }, 1000);
+                            }
+                        });
+                    </script>
+                 </div>
+              <form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="loginForm">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="username"><i class="fas fa-user"></i></label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="on" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="password"><i class="fas fa-lock"></i></label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="on" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
 
 
 
