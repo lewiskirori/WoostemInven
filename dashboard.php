@@ -31,7 +31,6 @@ $connect->close();
 	}
 </style>
 
-<!-- fullCalendar 2.2.5-->
     <link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.min.css">
     <link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.print.css" media="print">
 
@@ -41,14 +40,10 @@ $connect->close();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css" integrity="sha384-P7VH0zmjK7Vu1lK2e9Vn8WgOzHiMIgwYfQjnXM8xWx1zaxvOMJGlebzjh13tWGZ" crossorigin="anonymous">
-
-<!-- SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js" integrity="sha384-R9XN826ZWSWlHva1uKJjK0A8f0FG+HvOJmBhPkK9UJMi6UZptKw97T6Tguc6LnJ" crossorigin="anonymous"></script>
 <!-- Toastr CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
 <!-- Toastr JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
