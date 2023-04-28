@@ -15,8 +15,8 @@ Incredible Stock Control Management System
 ## Necessity
 
 ```
-//Require to change
-store_url in db_connect.php
+Require to change
+~store_url in db_connect.php
 ```
 ## License
 ```
