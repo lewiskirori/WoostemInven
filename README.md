@@ -10,7 +10,7 @@ Incredible Stock Control Management System
 
 ~Report management.
 
-~User wise view report.
+~User view report.
 ```
 ## Necessity
 
