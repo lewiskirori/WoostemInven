@@ -6,11 +6,10 @@ Incredible Stock Control Management System
 
 ~Order management and product management can be done with ease.
 
-~Lightweight and easy to use.
+~Lightweight hence easy to use.
 
-~Report management.
+~Report management & User view report.
 
-~User view report.
 ```
 ## Necessity
 
