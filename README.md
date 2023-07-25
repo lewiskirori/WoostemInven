@@ -2,22 +2,22 @@
 ```
 Incredible Stock Control Management System
 
-~Invoice generation and easy to download invoice in PDF format.
+~ Invoice generation and easy to download invoice in PDF format.
 
-~Order management and product management can be done with ease.
+~ Order management and product management can be done with ease.
 
-~Lightweight hence easy to use.
+~ Lightweight hence easy to use.
 
-~Report management & User view report.
+~ Report management & User view report.
 
 ```
 ## Necessity
 
 ```
 Require to change
-~store_url in db_connect.php
+~ store_url in db_connect.php
 ```
 ## License
 ```
-~MIT
+~ MIT
 ```
