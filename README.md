@@ -1,14 +1,12 @@
-## WoostemInven
+## WoostemInven Incredible stock control management system
 ```
-Incredible Stock Control Management System
+~ Easy download of invoices in PDF format and invoice creation.
 
-~ Invoice generation and easy to download invoice in PDF format.
+~ Product management and order management are simple to complete.
 
-~ Order management and product management can be done with ease.
+~ lightweight, making it simple to use.
 
-~ Lightweight hence easy to use.
-
-~ Report management & User view report.
+~ Management of reports and user-view reports.
 
 ```
 ## Necessity
