@@ -1,5 +1,5 @@
-## WoostemInven
-### Stock control management system
+## WoostemInven System
+### Stock control management 
 ```
 ~ Easy download of invoices in PDF format and invoice creation.
 
