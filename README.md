@@ -13,7 +13,7 @@
 ## Necessity
 
 ```
-Need modification
+Need to change 
 ~ store_url in db_connect.php
 ```
 ## License
