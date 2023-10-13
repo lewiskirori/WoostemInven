@@ -1,22 +1,24 @@
 ## WoostemInven System
-### Stock control management 
+### Stock control management
+
 ```
-~ Easy download of invoices in PDF format and invoice creation.
+~ Easy download of invoices and invoice creation.
 
 ~ Product management and order management are simple to complete.
 
 ~ lightweight, making it simple to use.
 
-~ Management of reports and user-view reports.
+~ Management of user-view reports.
 
 ```
-## Necessity
+### Necessity
 
 ```
 Need to change 
 ~ store_url in db_connect.php
 ```
-## License
+### License
+
 ```
 ~ MIT
 ```
