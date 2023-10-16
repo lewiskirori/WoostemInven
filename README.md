@@ -1,4 +1,4 @@
-## WoostemInven System
+## WoostemInven
 ### Stock control management
 
 ```
